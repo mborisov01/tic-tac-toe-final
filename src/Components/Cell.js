@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const Cell = (props) => {
   // Pass the cell number to the Board component
   const enetrValue = () => {

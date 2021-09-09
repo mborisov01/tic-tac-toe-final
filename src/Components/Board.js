@@ -53,7 +53,7 @@ const Board = () => {
   // Takes the user input and save it in a new array
   // Change the input state
   const userInput = (cellNum) => {
-    if (cells[cellNum] != "") {
+    if (cells[cellNum] !== "") {
       return;
     }
 
