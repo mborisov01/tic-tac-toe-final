@@ -1,3 +1,14 @@
-.Board {
-    background-color: red;
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row .cell-holder {
+    width: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
 }
