@@ -1,14 +1,61 @@
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.board-holder {
+    margin-bottom: 2rem;
 }
 
-.row .cell-holder {
+.board-holder h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.board-holder .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.board-holder .row .cell-holder {
     width: 90px;
+    height: 95px;
+    box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 5px;
     border: 1px solid black;
+    border-radius: 15px;
     text-align: center;
+    background-color: #eeee;
+}
+.board-holder .row .cell-holder span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.bottomContent .winner-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn {
+    outline: none;
+    border: 0px;
+    padding: 1rem;
+}
+
+.btn.btn-reset {
+    background-color: chartreuse;
+}
+
+.bottomContent span:last-of-type {
+    text-align: right;
+}
+
+.bottomContent span:last-of-type p {
+    font-size: 1rem;
+    color:darkslategrey;
 }

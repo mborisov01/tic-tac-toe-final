@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 
 const Cell = (props) => {
-
-    const enetrValue = () => {
-        props.onUserInput(props.num)
-    }
+  // Pass the cell number to the Board component
+  const enetrValue = () => {
+    props.onUserInput(props.num);
+  };
 
   return (
-    <div>
-      <div className="cell-holder" onClick={enetrValue}>
-        <span>{props.cells[props.num]}</span>
-      </div>
+    <div className="cell-holder" onClick={enetrValue}>
+      <span>{props.cells[props.num]}</span>
     </div>
   );
 };
