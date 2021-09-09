@@ -34,7 +34,7 @@ const Board = () => {
 
   return (
     <div>
-      <p>Tic Tac Toe `Player {sign} turn`</p>
+      <p>Tic Tac Toe `Player {sign} turn` test</p>
       <div className="row">
         <Cell num={0} onUserInput={userInput} cells={cells} />
         <Cell num={1} onUserInput={userInput} cells={cells} />
